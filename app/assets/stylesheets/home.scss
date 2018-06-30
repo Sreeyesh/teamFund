@@ -1,0 +1,75 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.carousel-caption{
+	top:25%;
+}
+
+/*footer */
+
+footer.page-footer{
+	background-color: #1c2431;
+	color: white;
+
+	a{
+		color: #3491bf !important;
+	}
+
+	div#social-connect a{
+		color: white !important;
+	}
+}
+
+hr.deep-purple{
+	background-color: #3491bf !important;
+}
+
+/* .footer{
+	padding: 30px;
+	color: #cccccc;
+	background-color: #08050c;
+}
+
+.footer h4{
+	font-weight: bold;
+	color: white;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.footer img{
+	width:10%;
+}
+
+.footer .social{
+	font-size: 20px;
+	height: 30px;
+	width: 30px;
+	margin-right: 5px;
+} */
+
+
+.team{
+	padding: 20px 0 20px;
+	text-align: center;
+}
+
+.team img{
+	width: 160px;
+	height: 160px;
+	margin-top: 20px;
+}
+
+.team b,
+.team h2,
+.team h4{
+	margin: 20px 0 20px;
+	color: #4C4C4C;
+	width: 100%;
+}
+
+.team p{
+	color: #737373;
+	width: 100%;
+}

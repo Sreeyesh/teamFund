@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TeamFund</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark nav-custom">
+      <!-- Brand -->
+      <a class="navbar-brand" href="<%= root_path %>"><img class="logo" src="<%= image_path('nmandea.png') %>"></a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="fas fa-credit-card"></i> Team Fund </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="fas fa-gift"></i> Gifts </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="fas fa-utensils"></i> Treat </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-users"></i> Members </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-sign-in-alt"></i> Sign In </a>
+          </li> 
+        </ul>
+      </div> 
+    </nav>
+    <%= yield %>
+  </body>
+</html>
