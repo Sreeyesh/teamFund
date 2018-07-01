@@ -6,6 +6,32 @@ div.carousel-caption{
 	top:25%;
 }
 
+div#carouselExampleIndicators2{
+	display: none;
+}
+
+div#carouselExampleIndicators{
+	display: block;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    box-shadow: 0px 0px 15px 3px grey;
+}
+
+
+/*div.carousel-item img{
+	height: 400px;
+	width: 100%;
+}*/
 /*footer */
 
 footer.page-footer{
@@ -56,9 +82,9 @@ hr.deep-purple{
 }
 
 .team img{
-	width: 160px;
-	height: 160px;
-	margin-top: 20px;
+	width: 140px;
+	height: 140px;
+	margin-left: -5px;
 }
 
 .team b,
@@ -72,4 +98,132 @@ hr.deep-purple{
 .team p{
 	color: #737373;
 	width: 100%;
+}
+
+div#carouselExampleIndicators{
+	margin-top: -66px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("parallax.jpg");
+
+    /* Set a specific height */
+    min-height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.testimonial-card {
+
+	margin-bottom: 5px;
+
+	.card-up {
+	    overflow: hidden;
+	    height: 120px;
+	    -webkit-border-top-left-radius: .25rem;
+	    border-top-left-radius: .25rem;
+	    -webkit-border-top-right-radius: .25rem;
+	    border-top-right-radius: .25rem;
+	}
+
+	.avatar {
+	    -webkit-border-radius: 50%;
+	    border-radius: 50%;
+	    width: 140px;
+	    height: 140px;
+	    margin-top: -60px;
+	    overflow: hidden;
+	    border: 5px solid #fff;
+	}
+
+	.lighten-1 {
+	    background: linear-gradient(40deg, #2096ff, #000000) !important;
+	}
+
+	.lighten-2 {
+	    background: linear-gradient(40deg, #ff6ec4, #000000) !important;
+	}
+	.lighten-3 {
+	    background: linear-gradient(40deg, #ffbb05, #000000) !important;
+	}
+	.lighten-4 {
+	    background: linear-gradient(40deg, #00ff40, #000000) !important;
+	}
+
+	.card-down {
+	    overflow: hidden;
+	    height: 10px;
+	    -webkit-border-bottom-left-radius: .25rem;
+	    border-bottom-left-radius: .25rem;
+	    -webkit-border-bottom-right-radius: .25rem;
+	    border-bottom-right-radius: .25rem;
+	}
+
+	.lighten-5 {
+	    background: linear-gradient(40deg, #000000, #2096ff) !important;
+	}
+
+	.lighten-6 {
+	    background: linear-gradient(40deg, #000000, #ff6ec4) !important;
+	}
+	.lighten-7 {
+	    background: linear-gradient(40deg, #000000, #ffbb05) !important;
+	}
+	.lighten-8 {
+	    background: linear-gradient(40deg, #000000, #00ff40) !important;
+	}
+
+}
+
+.objective{
+
+	img{
+		width: 200px;
+		height: 200px;
+	}
+
+	.cols3{
+		position: relative;
+	}
+
+	.count{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding-top: 14vh;
+    	padding-left: 1vh;
+	}
+
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+	div#carouselExampleIndicators2{
+		margin-top: -1px;
+		display: block;
+	}
+
+	div#carouselExampleIndicators{
+		display: none;
+	}
+
+
+	.d-none {
+	    display: block !important;
+	}
+
+	div.carousel-caption {
+	    top: 0%;
+	}
 }

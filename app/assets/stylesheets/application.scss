@@ -8,6 +8,7 @@ img.logo{
 
 nav.nav-custom{
 	background-color: #00000000 !important;
+	z-index: 10;
 }
 
 li.nav-item{
@@ -18,5 +19,21 @@ li.nav-item{
 	font-weight: bold;
 	padding-left: 5px;
 	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	nav.nav-custom{
+		background-color: #000000 !important;
+	}
+
+	li.nav-item{
+		background-color: unset;
+		border-radius: unset;
+		width: unset;
+		margin-right: unset;
+		font-weight: unset;
+		padding-left: unset;
+		text-align: unset;
+	}
 }
 
