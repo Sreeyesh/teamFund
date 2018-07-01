@@ -1,0 +1,9 @@
+require 'test_helper'
+
+class AccountsControllerTest < ActionDispatch::IntegrationTest
+  test "should get login" do
+    get accounts_login_url
+    assert_response :success
+  end
+
+end
