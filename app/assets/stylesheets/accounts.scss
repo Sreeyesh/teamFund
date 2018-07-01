@@ -54,5 +54,9 @@ div.login{
 
 
 @media only screen and (max-width: 768px) {
-
+	img.avatar{
+		height: 100px !important;
+		width: 100px !important;
+		margin-top: -70px !important;
+	}
 }
