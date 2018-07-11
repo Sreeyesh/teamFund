@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :members
   root 'home#index'
 
   match 'accounts/login', :to => "accounts#login", :as => "login", :via => [:get, :post]

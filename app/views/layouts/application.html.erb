@@ -8,6 +8,10 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.6/css/mdb.min.css" />
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.6/js/mdb.min.js"></script>
+
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -36,7 +40,7 @@
             <a class="nav-link" href="#"> <i class="fas fa-utensils"></i> Treat </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-users"></i> Members </a>
+            <a class="nav-link" href="<%= members_path() %>"><i class="fas fa-users"></i> Members </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<%= login_path() %>"><i class="fas fa-sign-in-alt"></i> Sign In </a>
@@ -44,6 +48,9 @@
         </ul>
       </div> 
     </nav>
+
+    
+  <a id="back-to-top" href="#" class="btn btn-danger btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fas fa-arrow-up"></i></a>
     <%= yield %>
   </body>
 </html>

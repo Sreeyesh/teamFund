@@ -55,6 +55,16 @@ div.fixed-bottom{
 	background-color: transparent;
 }
 
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
 
 
 @media only screen and (max-width: 768px) {
